@@ -1,0 +1,183 @@
+
+.timeline-in {
+	position: absolute;
+	padding-top:70px;
+	right:0px;
+  width:10px;
+  height: 100%;
+  background-color: #ccc;
+  z-index:100;
+  margin-top:-50px;
+}
+.timeline-out {
+	position: absolute;
+	padding-top:70px;
+	right:0px;
+  width:200px;
+  height: 100%;
+  background-color: #ccc;
+  z-index:100;
+  margin-top:-50px;
+}
+
+#btn_timeline{
+	position: absolute;
+	left:0px;
+	width:10px;
+  height: inherit;
+  background-color: #ccc;
+  z-index:100;
+  margin-top:-70px;
+	line-height: 850px;
+}
+.btn_timeline_in{
+	width: 10px;
+	height: 10px;
+	vertical-align: middle;
+	background-image: url("/resources/img/btn_timeline_in.png");
+  background-size:contain;
+}
+.btn_timeline_out{
+	width: 10px;
+	height: 10px;
+	vertical-align: middle;
+	background-image: url("/resources/img/btn_timeline_out.png");
+  background-size:contain;
+}
+
+
+#temp {
+	position: absolute;
+	padding-top:70px;
+	left:0px;
+  width:100px;
+  height:100%;
+  background-color: #ccc;
+  z-index:100;
+ 
+}
+
+#content{
+	position: absolute;
+	padding-top:70px;
+  width:300px;
+  height: 400px;
+  background-color: #ddd;
+  z-index:100;
+ 	left:22%;
+ 	top:30%;
+ 	
+}
+
+#reply{
+	position: absolute;
+	padding-top:70px;
+  width:280px;
+  height: 200px;
+  background-color: #ddd;
+  z-index:100;
+ 	left:22%;
+ 	top:30%;
+}
+
+#mypage{
+	position: absolute;
+	padding-top:70px;
+	left:15%;
+	top:15%;
+  width:550px;
+  height: 600px;
+  background-color: #ddd;
+  z-index:100;
+}
+
+#userpage{
+	position: absolute;
+	padding-top:70px;
+	left:15%;
+	top:15%;
+  width:550px;
+  height: 600px;
+  background-color: #ddd;
+  z-index:100;
+}
+
+#treelist{
+	position: absolute;
+	padding-top:70px;
+	left:0px;
+  width:200px;
+  height: 300px;
+  background-color: #ddd;
+  z-index:100;
+}
+
+#friendlist{
+	position: absolute;
+	padding-top:70px;
+	right:0px;
+  width:200px;
+  height: 400px;
+  background-color: #ddd;
+  z-index:100;
+  margin-top:-50px;
+}
+
+.nano { background: #bba; width: 500px; height: 500px; }
+.nano .nano-content { padding: 10px; }
+.nano .nano-pane   { background: #888; }
+.nano .nano-slider { background: #111; }
+.nano {
+  position : relative;
+  width    : 100%;
+  height   : 100%;
+  overflow : hidden;
+}
+.nano > .nano-content {
+  position      : absolute;
+  overflow      : scroll;
+  overflow-x    : hidden;
+  top           : 0;
+  right         : 0;
+  bottom        : 0;
+  left          : 0;
+}
+.nano > .nano-content:focus {
+  outline: thin dotted;
+}
+.nano > .nano-content::-webkit-scrollbar {
+  display: none;
+}
+.has-scrollbar > .nano-content::-webkit-scrollbar {
+  display: block;
+}
+.nano > .nano-pane {
+  background : rgba(0,0,0,.25);
+  position   : absolute;
+  width      : 10px;
+  right      : 0;
+  top        : 0;
+  bottom     : 0;
+  visibility : hidden\9; /* Target only IE7 and IE8 with this hack */
+  opacity    : .01;
+  -webkit-transition    : .2s;
+  -moz-transition       : .2s;
+  -o-transition         : .2s;
+  transition            : .2s;
+  -moz-border-radius    : 5px;
+  -webkit-border-radius : 5px;
+  border-radius         : 5px;
+}
+.nano > .nano-pane > .nano-slider {
+  background: #444;
+  background: rgba(0,0,0,.5);
+  position              : relative;
+  margin                : 0 1px;
+  -moz-border-radius    : 3px;
+  -webkit-border-radius : 3px;
+  border-radius         : 3px;
+}
+.nano:hover > .nano-pane, .nano-pane.active, .nano-pane.flashed {
+  visibility : visible\9; /* Target only IE7 and IE8 with this hack */
+  opacity    : 0.99;
+}
