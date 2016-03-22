@@ -1,4 +1,4 @@
-package treeTest;
+
 
 import java.util.List;
 import java.util.Map;
@@ -22,7 +22,7 @@ import service.user.UserService;
 										"classpath:config/context-mybatis.xml",
 										"classpath:config/context-transaction.xml" })
 //@ContextConfiguration(locations = { "classpath:config/context-common.xml" })
-public class ReplyServiceTest {
+public class UserServiceTest {
 
 	@Autowired
 	@Qualifier("userServiceImpl")
