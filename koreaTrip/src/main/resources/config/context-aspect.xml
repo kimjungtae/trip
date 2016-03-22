@@ -11,7 +11,7 @@
 				
 		<!--  AOP 적용 : LOG 를 처리사느  Aspect 선언   -->
 	<!-- 1.일반 Bean Definition :: POJO 기반 -->
-	<bean 	id="logAspect"		class="treenote.common.aspect.LogAspectJ" />
+	<bean 	id="logAspect"		class="common.aspect.LogAspectJ" />
 	 
 	 <!-- 2. 선언적으로 Point cut / Advice 정의 
 	 			:: TestAspectJ02.java(pointCut+advice 합치기(?)) 의 annotation과 아래를 비교 -->

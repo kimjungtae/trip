@@ -1,4 +1,4 @@
-package treenote.service.user.impl;
+package service.user.impl;
 
 import java.util.List;
 
@@ -7,12 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
-import treenote.domain.User;
-import treenote.service.user.UserDao;
+import domain.User;
+import service.user.UserDao;
 
 @Repository("userDaoImpl")
 public class UserDaoImpl implements UserDao {
-
+	
 	/// Field
 	@Autowired
 	@Qualifier("sqlSessionTemplate")
@@ -26,7 +26,7 @@ public class UserDaoImpl implements UserDao {
 	public UserDaoImpl() {
 		System.out.println(this.getClass());
 	}
-
+	
 	@Override
 	public void addUser(User user) throws Exception {
 		// TODO Auto-generated method stub

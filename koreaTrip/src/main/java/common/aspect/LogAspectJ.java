@@ -1,4 +1,4 @@
-package treenote.common.aspect;
+package common.aspect;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 

@@ -7,13 +7,13 @@
 
 
 	<resultMap type="user" id="userMap">
-		<result property="userNo" column="USER_NO" jdbcType="INTEGER"></result>
+<!-- 		<result property="userNo" column="USER_NO" jdbcType="INTEGER"></result> -->
 		<result property="email" column="EMAIL" jdbcType="VARCHAR"></result>
-		<result property="password" column="PASSWORD" jdbcType="VARCHAR"/>
+<!-- 		<result property="password" column="PASSWORD" jdbcType="VARCHAR"/> -->
 		<result property="name" column="NAME" jdbcType="VARCHAR"/>
-		<result property="phone" column="PHONE" jdbcType="VARCHAR"/>
-		<result property="photo" column="PHOTO" jdbcType="VARCHAR"/>
-		<result property="snsUser" column="SNSUSER" jdbcType="VARCHAR"/>
+<!-- 		<result property="phone" column="PHONE" jdbcType="VARCHAR"/> -->
+<!-- 		<result property="photo" column="PHOTO" jdbcType="VARCHAR"/> -->
+<!-- 		<result property="snsUser" column="SNSUSER" jdbcType="VARCHAR"/> -->
 	
 	</resultMap>
 
@@ -46,25 +46,25 @@
 	</select>
 
 
-	<insert id="addUser" parameterType="user" >
-		INSERT INTO USERS (
-			user_no,
-			email,
-			password,
-			name,
-			phone,
-			photo
-		)
-		VALUES (
-			SEQ_USERS_USER_NO.nextval,
-			#{email},
-			#{password},
-			#{name},
-			#{phone},
-			#{photo}
+<!-- 	<insert id="addUser" parameterType="user" > -->
+<!-- 		INSERT INTO USERS ( -->
+<!-- 			user_no, -->
+<!-- 			email, -->
+<!-- 			password, -->
+<!-- 			name, -->
+<!-- 			phone, -->
+<!-- 			photo -->
+<!-- 		) -->
+<!-- 		VALUES ( -->
+<!-- 			SEQ_USERS_USER_NO.nextval, -->
+<!-- 			#{email}, -->
+<!-- 			#{password}, -->
+<!-- 			#{name}, -->
+<!-- 			#{phone}, -->
+<!-- 			#{photo} -->
 
-		)
-	</insert>
+<!-- 		) -->
+<!-- 	</insert> -->
 
 
 <!-- 
@@ -92,7 +92,16 @@
 
  -->
 	
-
+	<insert id="addUser" parameterType="user" >
+		INSERT INTO USER (
+			email,
+			name
+		)
+		VALUES (
+			#{email},
+			#{name}
+		)
+	</insert>
 
 
 

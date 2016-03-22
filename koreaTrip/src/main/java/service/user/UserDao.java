@@ -1,8 +1,8 @@
-package treenote.service.user;
+package service.user;
 
 import java.util.List;
 
-import treenote.domain.User;
+import domain.User;
 
 public interface UserDao {
 

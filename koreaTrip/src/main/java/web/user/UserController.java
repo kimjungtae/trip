@@ -1,4 +1,4 @@
-package treenote.web.user;
+package web.user;
 
 import javax.servlet.http.HttpSession;
 
@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.fasterxml.jackson.core.JsonParser;
 import com.google.gson.JsonObject;
 
-import treenote.domain.User;
-import treenote.service.user.UserService;
+import domain.User;
+import service.user.UserService;
 
 @Controller
 @RequestMapping("/user/*")

@@ -1,4 +1,4 @@
-package treenote.common.filter;
+package common.filter;
 
 import java.io.IOException;
 

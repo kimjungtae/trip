@@ -1,4 +1,4 @@
-package treenote.service.user.impl;
+package service.user.impl;
 
 import java.util.List;
 
@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import treenote.domain.User;
-import treenote.service.user.UserDao;
-import treenote.service.user.UserService;;
+import domain.User;
+import service.user.UserDao;
+import service.user.UserService;;
 
 @Service("userServiceImpl")
 public class UserServiceImpl implements UserService {
