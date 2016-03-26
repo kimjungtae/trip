@@ -7,7 +7,7 @@ import org.aspectj.lang.ProceedingJoinPoint;
  *	:: XML 에 선언적으로 aspect 의 적용   
   */
 public class LogAspectJ {
-
+	
 	///Constructor
 	public LogAspectJ() {
 		System.out.println("\nCommon :: "+this.getClass()+"\n");
@@ -16,7 +16,7 @@ public class LogAspectJ {
 	//Around  Advice
 	public Object invoke(ProceedingJoinPoint joinPoint) throws Throwable {
 			
-		System.out.println("");
+		System.out.println("testingtesting");
 		System.out.println("[Around before] 타겍객체.메서드 :"+
 													joinPoint.getTarget().getClass().getName() +"."+
 													joinPoint.getSignature().getName());
