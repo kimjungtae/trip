@@ -36,7 +36,7 @@ public class UserServiceTest {
 		user.setName("김정태");
 				
 		userService.addUser(user);
-
+		System.out.println("dd");
 //		Page search = new Page();
 //		search.setCurrentPage(1);
 //		search.setPageSize(5);
